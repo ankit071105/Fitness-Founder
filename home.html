@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="my.css">
     <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -44,46 +46,44 @@
     <div class="home-container">
         <div class="post-container">
             <div class="post">
-                <img src="https://ideogram.ai/assets/image/balanced/response/sRU1wtmsSKe8NlGe4xISYw" alt="Post Image">
-                <div class="post-content">
-                    <h3>Username</h3>
-                    <p>This is a sample post content.</p>
-                </div>
-                <div class="post-actions">
-                    <button class="like-btn">Like</button>
-                    <button class="comment-btn">Comment</button>
-                    <button class="share-btn">Share</button>
-                </div>
-                <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
-                    <button class="submit-comment-btn">Submit</button>
-                    <div class="comments-list">
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="post-container">
-            <div class="post">
                 <img src="https://ideogram.ai/assets/image/balanced/response/0v6WK2dSSSm7letllmU1YQ" alt="Post Image">
                 <div class="post-content">
                     <h3>Username</h3>
                     <p>This is a sample post content.</p>
                 </div>
                 <div class="post-actions">
-                    <button class="like-btn">Like</button>
-                    <button class="comment-btn">Comment</button>
-                    <button class="share-btn">Share</button>
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
                 </div>
                 <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
-                    <button class="submit-comment-btn">Submit</button>
-                    <div class="comments-list">
-    
-                    </div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
                 </div>
             </div>
         </div>
+   <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/sRU1wtmsSKe8NlGe4xISYw" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+        
+                </div>
+            </div>
+        </div>
+      
         <div class="post-container">
             <div class="post">
                 <img src="https://ideogram.ai/assets/image/balanced/response/gGd2K8jYQzGHBagT4TrouQ" alt="Post Image">
@@ -92,17 +92,16 @@
                     <p>This is a sample post content.</p>
                 </div>
                 <div class="post-actions">
-                    <button class="like-btn">Like</button>
-                    <button class="comment-btn">Comment</button>
-                    <button class="share-btn">Share</button>
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
                 </div>
                 <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
-                    <button class="submit-comment-btn">Submit</button>
-                    <div class="comments-list">
-    
-                    </div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
                 </div>
+          
             </div>
         </div>
         <div class="post-container">
@@ -113,16 +112,14 @@
                     <p>This is a sample post content.</p>
                 </div>
                 <div class="post-actions">
-                    <button class="like-btn">Like</button>
-                    <button class="comment-btn">Comment</button>
-                    <button class="share-btn">Share</button>
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
                 </div>
                 <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
-                    <button class="submit-comment-btn">Submit</button>
-                    <div class="comments-list">
-    
-                    </div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
                 </div>
             </div>
         </div>
@@ -134,21 +131,249 @@
                     <p>This is a sample post content.</p>
                 </div>
                 <div class="post-actions">
-                    <button class="like-btn">Like</button>
-                    <button class="comment-btn">Comment</button>
-                    <button class="share-btn">Share</button>
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
                 </div>
                 <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
-                    <button class="submit-comment-btn">Submit</button>
-                    <div class="comments-list">
-    
-                    </div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
                 </div>
             </div>
         </div>
-        <script src="my.js"></script>
-    </div>
+       
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/0v6WK2dSSSm7letllmU1YQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+   <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/sRU1wtmsSKe8NlGe4xISYw" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+        
+                </div>
+            </div>
+        </div>
+      
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/gGd2K8jYQzGHBagT4TrouQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+          
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/3TTRh7wcTTig6nqtwAbwWQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/PWvN_ZklRQOp8oS9wIyyFA" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/0v6WK2dSSSm7letllmU1YQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+   <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/sRU1wtmsSKe8NlGe4xISYw" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+        
+                </div>
+            </div>
+        </div>
+      
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/gGd2K8jYQzGHBagT4TrouQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+          
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/3TTRh7wcTTig6nqtwAbwWQ" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <img src="https://ideogram.ai/assets/image/balanced/response/PWvN_ZklRQOp8oS9wIyyFA" alt="Post Image">
+                <div class="post-content">
+                    <h3>Username</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" onclick="commentPost(this)"><i class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                    <button class="share-btn" onclick="sharePost(this)"><i class="fas fa-share"></i> <span class="share-count">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="submit-comment-btn" onclick="submitComment(this)">Submit</button>
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+       
+        
+        </div>
+        <script>
+            function likePost(button) {
+                let likeCount = button.querySelector('.like-count');
+                likeCount.innerText = parseInt(likeCount.innerText) + 1;
+                alert('Like has been added.');
+            }
+    
+            function commentPost(button) {
+                let commentInput = button.closest('.post').querySelector('.comment-input');
+                commentInput.focus();
+            }
+    
+            function submitComment(button) {
+                let commentInput = button.previousElementSibling;
+                let commentText = commentInput.value.trim();
+                if (commentText !== '') {
+                    let commentsList = button.closest('.comment-section').querySelector('.comments-list');
+                    let commentCount = button.closest('.post-actions').querySelector('.comment-count');
+                    commentsList.innerHTML += `<p>${commentText}</p>`;
+                    commentInput.value = '';
+                    commentCount.innerText = parseInt(commentCount.innerText) + 1;
+                    alert('Comment has been added.');
+                }
+            }
+    
+            function sharePost(button) {
+                let shareCount = button.querySelector('.share-count');
+                shareCount.innerText = parseInt(shareCount.innerText) + 1;
+                alert('Post has been shared.');
+            }
+        </script>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
